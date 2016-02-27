@@ -1,0 +1,42 @@
+extends layout
+
+block contenthead
+
+block content
+  div(id="wrapper")
+    div(id="header")
+      h1 VIDEOSPELARKOLLEN
+      p Jämför hur olika ramverk för videouppspelning av strömmande video fungerar i din webbläsare
+    div(id="content")
+      div.videoplayer(id="ampcontainer")
+        h1 Azure Media Player
+        iframe.embed(src="player/amp")
+        p Version: 1.6.2
+        p Format: HSS (unencrypted)
+        p Stöd för: MSE, EME, Flash, NPAPI
+        p Hemsida: 
+          a(href="http://amsplayer.azurewebsites.net") amsplayer.azurewebsites.net
+      div.videoplayer(id="videojscontainer")
+        h1 Video JS (w Flash HLS plugin)
+        iframe.embed(src="player/videojs-flashhls")
+        p Version: 5.0.2 (Flash HLS plugin v0.4.4.19)
+        p Format: HLS (unencrypted)
+        p Stöd för: MSE, Flash
+        p Hemsida:
+          a(href="http://videojs.com") Video JS, 
+          a(href="http://www.flashhls.org") Flash HLS
+       div.videoplayer(id="viblast")
+         h1 Viblast Player
+         iframe.embed(src="player/viblast")
+         p Version: n/a
+         p Format: HLS (unencrypted)
+         p Stöd för: MSE, Flash
+         p Hemsida:
+           a(href="http://viblast.com/player") Viblast
+       div.videoplayer(id="jwplayercontainer")
+        h1 JW Player
+      div.videoplayer(id="dasheverywherecontainer")
+        h1 DASH Everywhere
+      div.videoplayer(id="dashjs")
+        h1 DASH.js
+    div(id="footer")

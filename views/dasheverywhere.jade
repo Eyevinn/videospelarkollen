@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/player.css')
+    link(href="http://vjs.zencdn.net/4.11.4/video-js.css", rel="stylesheet")
+    script(src="http://vjs.zencdn.net/4.11.4/video.js")
+    script(src="/cldasheverywhere.min.js")
+  body
+    div(id="dashasvid1", class="video-js vjs-default-skin vjs-big-play-centered vjs-controls-enabled vjs-has-started vjs-paused vjs-user-inactive", style="width: 400px; height: 250px")
+      object(type="application/x-shockwave-flash", data="/dashas.swf", width="400", height="250", id="vid_flash_api", class="vjs-tech", style="display: block")
+       param(name="movie", value="/dashas.swf")
+       param(name="flashvars", value="readyFunction=videojs.Flash.onReady&eventProxyFunction=videojs.Flash.onEvent&errorEventProxyFunction=videojs.Dashas.onError&autoplay=true&preload=undefined&loop=undefined&muted=undefined&metadataUrl=undefined&authenticationToken=undefined&spinner=false&watermark=false&debug=false&quality=autolow&maxBufferLength=25&src=http%3A%2F%2Fwams.edgesuite.net%2Fmedia%2FMPTExpressionData02%2FBigBuckBunny_1080p24_IYUV_2ch.ism%2Fmanifest(format%3Dmpd-time-csf)")
+       param(name="allowScriptAccess", value="always")
+       param(name="allowNetworking", value="all")
+       param(name="wmode", value="opaque")
+       param(name="bgcolor", value="#000000")
+

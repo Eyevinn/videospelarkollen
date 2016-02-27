@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/player.css')
+    link(href="http://vjs.zencdn.net/5.0.2/video-js.css", rel="stylesheet")
+    script(src="http://vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js")
+    script(src="http://vjs.zencdn.net/5.0.2/video.js")
+    script.
+      videojs.options.flash.swf = "../video-js.swf";
+  body
+    video(id="videojsvid1", class="video-js vjs-default-skin", controls="1", preload="none", width="400", height="250", data-setup='{"techOrder": ["flash"]}', poster="/images/eyevinn-logo-square.png")
+      source(src="http://184.72.239.149/vod/smil:BigBuckBunny.smil/playlist.m3u8", type="video/mp4")
+      p Support saknas
+       

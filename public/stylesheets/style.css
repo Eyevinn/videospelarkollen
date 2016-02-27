@@ -1,0 +1,55 @@
+@font-face {
+  font-family: LevelOne;
+  src: url('//cdn.streamingkollen.tv/fonts/LevelOne.woff');
+}
+
+html, body {
+  font: 14px LevelOne, "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url('//cdn.streamingkollen.tv/images/bg-light.jpg');
+  background-repeat: no-repeat;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#header {
+  width: 100%;
+}
+
+#header h1, p {
+  text-align: center;
+}
+
+.videoplayer h1 {
+  font-size: 1em;
+}
+
+.videoplayer p {
+  text-align: left;
+  font-size: 0.8em;
+  margin-left: 4px;
+  margin-top: 2px;
+  margin-bottom: 1px;
+}
+
+.videoplayer {
+  text-align: center;
+  width: 400px;
+  height: 350px;
+  border: solid 1px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.embed {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  display: block;
+  width: 400px;
+  height: 250px;
+}
